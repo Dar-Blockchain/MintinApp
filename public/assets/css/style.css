@@ -1,0 +1,52 @@
+@font-face {
+  font-family: "Custom Font";
+  src: url("../fonts/AVENGEANCE\ MIGHTIEST\ AVENGER.ttf"); /* Chemin correct ici */
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Custom Font";
+}
+@media screen and (min-width: 640px) {
+  body {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .mobile-full-width {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .desktop-text p {
+    font-size: 5%; /* Taille de police ajustée pour la version de bureau */
+  }
+}
+
+@media screen and (min-width: 640px) {
+  h2 {
+    font-size: 5rem; /* Taille ajustée pour les titres */
+  }
+
+  p {
+    font-size: 1.25rem; /* Taille ajustée pour le texte */
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .intro-text {
+    width: 100%; /* prend toute la largeur sur mobile */
+    margin-bottom: 20px; /* espace supplémentaire en dessous */
+  }
+}

@@ -1,0 +1,15 @@
+.modal-img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.img-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.modal-title {
+  color: black !important;
+}
