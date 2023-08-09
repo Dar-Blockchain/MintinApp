@@ -115,7 +115,7 @@ export const mintNFT = async(amount) => {
         maxPriorityFeePerGas: web3.utils.toHex(gazfees.maxPriorityFeePerGas.toString()),
         maxFeePerGas: web3.utils.toHex(gazfees.maxFeePerGas.toString()),
         
-        gas: ethers.BigNumber.from(400000).toHexString(),
+        gas: ethers.BigNumber.from(220000).toHexString(),
 		    value: "0x" + val,
         'data': nftContract.methods.WaldosMint(amount,window.ethereum.selectedAddress).encodeABI() //make call to NFT smart contract 
 		//Web3.utils.toBN(Web3.utils.toWei(val, "ether")).toString(16)
