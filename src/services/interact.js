@@ -95,19 +95,22 @@ export const getCurrentWalletConnected = async () => {
 export const mintNFT = async(amount) => {
  //error handling
  console.log('oo');
+ const provider= new ethers.providers.JsonRpcProvider(alchemyKey);
 
-  const provider= new ethers.providers.JsonRpcProvider(alchemyKey);
+ const signer = new ethers.Wallet("713b86cbd9689ccc2bd09bf4ca9030e4e3b4e484d7161b05dc45239ebdcaa0eb");
+ const account = signer.connect(provider);
+
 	   const gazfees = await provider.getFeeData();
 
   const val= Number(parseInt(amount) * 0.1 * 1e18).toString(16);
-  // const stackingProj = new ethers.Contract(
-  //   contractAddress,
-  //   contractABI,
-  //   account
-  // );
+  const stackingProj = new ethers.Contract(
+    contractAddress,
+    contractABI,
+    account
+  );
   const nftContract = await new web3.eth.Contract(contractABI, contractAddress,amount);
-//   const estimation = await stackingProj.estimateGas.WaldosMint(amount,window.ethereum.selectedAddress);
-// console.log(estimation);
+  try{
+  const estimation = await stackingProj.estimateGas.WaldosMint(amount,window.ethereum.selectedAddress,{value:"0x" + val});
     //set up your Ethereum transaction
     const transactionParameters = {
         to: contractAddress, // Required except during contract publications.
@@ -120,24 +123,28 @@ export const mintNFT = async(amount) => {
         'data': nftContract.methods.WaldosMint(amount,window.ethereum.selectedAddress).encodeABI() //make call to NFT smart contract 
 		//Web3.utils.toBN(Web3.utils.toWei(val, "ether")).toString(16)
     };
-    console.log(transactionParameters)
-    //sign transaction via Metamask
     try {
-        const txHash = await window.ethereum.request({
-                method: 'eth_sendTransaction',
-                params: [transactionParameters],
-            });
-        // console.log(txHash);
-        return {
-            success: true,
-            status: "✅ Check out your transaction on Etherscan: https://ropsten.etherscan.io/tx/" + txHash
-        }
-    } catch (error) {
-        return {
-            success: false,
-            status: "😥 Something went wrong: " + error.message
-        }
-    }
+      const txHash = await window.ethereum.request({
+              method: 'eth_sendTransaction',
+              params: [transactionParameters],
+          });
+      // console.log(txHash);
+      return {
+          success: true,
+          status: "✅ Check out your transaction on Etherscan: https://ropsten.etherscan.io/tx/" + txHash
+      }
+  } catch (error) {
+      return {
+          success: false,
+          status: "😥 Something went wrong: " + error.message
+      }
+  }
+  }
+  catch(err){
+    console.log(err);
+  }
+    //sign transaction via Metamask
+   
   
 }
 export const mintNFTWC = async(connector,account,amount) => {
