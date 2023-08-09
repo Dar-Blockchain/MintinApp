@@ -95,18 +95,26 @@ export const getCurrentWalletConnected = async () => {
 export const mintNFT = async(amount) => {
  //error handling
  console.log('oo');
- if(amount != "" && amount != "0")
- {
+
   const provider= new ethers.providers.JsonRpcProvider(alchemyKey);
 	   const gazfees = await provider.getFeeData();
+
   const val= Number(parseInt(amount) * 0.1 * 1e18).toString(16);
+  // const stackingProj = new ethers.Contract(
+  //   contractAddress,
+  //   contractABI,
+  //   account
+  // );
   const nftContract = await new web3.eth.Contract(contractABI, contractAddress,amount);
+//   const estimation = await stackingProj.estimateGas.WaldosMint(amount,window.ethereum.selectedAddress);
+// console.log(estimation);
     //set up your Ethereum transaction
     const transactionParameters = {
         to: contractAddress, // Required except during contract publications.
         from: window.ethereum.selectedAddress, // must match user's active address.
         maxPriorityFeePerGas: web3.utils.toHex(gazfees.maxPriorityFeePerGas.toString()),
         maxFeePerGas: web3.utils.toHex(gazfees.maxFeePerGas.toString()),
+        
         gas: ethers.BigNumber.from(400000).toHexString(),
 		    value: "0x" + val,
         'data': nftContract.methods.WaldosMint(amount,window.ethereum.selectedAddress).encodeABI() //make call to NFT smart contract 
@@ -130,10 +138,7 @@ export const mintNFT = async(amount) => {
             status: "😥 Something went wrong: " + error.message
         }
     }
-  }
-  else {
-    alert("please choose an NFT amount")
-  }
+  
 }
 export const mintNFTWC = async(connector,account,amount) => {
  //error handling
