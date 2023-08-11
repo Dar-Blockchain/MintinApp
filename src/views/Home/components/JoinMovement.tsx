@@ -1,9 +1,12 @@
 import ModalComponent from "../../../components/Modal/Modal";
 import { useState } from "react";
 import { connectWallet } from "../../../services/interact";
+import {mintNFT} from "../../../services/interact";
 const JoinMovement = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
-
+  const metamaskAction = async() => {
+    await mintNFT(1);
+  };
   const openModal = () => {
     setModalIsOpen(true);
   };
@@ -36,7 +39,7 @@ const JoinMovement = () => {
           </a>
           <a
             className="relative mx-2 my-4 md:my-0 w-full md:w-1/3 text-center"
-            onClick={openModal}
+            onClick={metamaskAction}
           >
             <img
               src="assets/images/Mint%20Soon.png"
