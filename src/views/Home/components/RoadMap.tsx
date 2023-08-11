@@ -16,21 +16,21 @@ const RoadMap = () => {
       <div className="flex flex-col md:flex-row items-center justify-between mt-16 mx-8">
         <div className="md:w-1/2 text-2xl md:text-4xl">
           <ul className="list-inside list-disc font-text">
-            <li>CREATION OF NFT COLLECTION</li>
-            <li>GROWING COMMUNITY</li>
-            <li>NFT USECASE</li>
-            <li>MINT : 20 ETH RAISED</li>
-            <li>E-SHOP ONLINE</li>
-            <li>IRL SHOP OPENING</li>
-            <li>SLOW MINT</li>
-            <li>TEAM IS GROWING!</li>
+            <li className="list-item">CREATION OF NFT COLLECTION</li>
+            <li className="list-item">GROWING COMMUNITY</li>
+            <li className="list-item">NFT USECASE</li>
+            <li className="list-item">MINT : 20 ETH RAISED</li>
+            <li className="list-item">E-SHOP ONLINE</li>
+            <li className="list-item">IRL SHOP OPENING</li>
+            <li className="list-item">SLOW MINT</li>
+            <li className="list-item">TEAM IS GROWING!</li>
           </ul>
         </div>
         <div className="md:w-1/2">
           <img
             src="assets/images/Roadmap.png"
             alt="ROADMAP"
-            className="w-2/3 mx-auto my-8 rounded-3xl mobile-full-width"
+            className="w-2/3 ml-3 rounded-3xl mobile-full-width"
           />
         </div>
       </div>

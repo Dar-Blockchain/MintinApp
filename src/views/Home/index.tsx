@@ -6,6 +6,8 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Divider from "../../components/Divider/Divider";
 import "./Home.css";
+import Shopping from "./components/Shopping";
+import History from "./components/History";
 
 const Home = () => {
   return (
@@ -14,6 +16,10 @@ const Home = () => {
       <About />
       <Divider />
       <JoinMovement />
+      <Divider />
+      <History />
+      <Divider />
+      <Shopping />
       <Divider />
       <RoadMap />
       <Divider />
