@@ -33,10 +33,10 @@ const Footer = () => {
           <a href="https://twitter.com/WaldosLegend" className="mx-1">
             <img src="assets/images/X.png" alt="X.com" className="w-8 h-8" />
           </a>
-          <a href="https://www.instagram.com/thewaldoslegend/" className="mx-1">
+          <a href="https://linktr.ee/waldoslegend" className="mx-1">
             <img
               src="assets/images/5.png"
-              alt="instagram"
+              alt="linktr"
               className="w-8 h-8"
             />
           </a>
