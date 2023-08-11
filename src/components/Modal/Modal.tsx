@@ -8,14 +8,19 @@ function ModalComponent(props: any) {
   const metamaskAction = async() => {
     await mintNFT(amount);
   };
+  const metamaskErr = () => {
+return ;  };
+  
   const walletConnectAction = () => {};
   return (
     <Modal show={modalIsOpen} onHide={closeModal}>
       <Modal.Header closeButton>
         <Modal.Title className="title">CHOOSE YOUR WALDOS AMOUNT
         <input type="text" value={amount} onChange={(val) =>  setAmount(val.target.value)}  style={{borderColor : "black"}}/><br />
-        {(amount == "0" || amount == "") &&
+        {(amount == "0" || amount == "" ) &&
           <p style={{color:"red"}}>please choose an NFT amount</p>}
+          {(amount != "" && parseInt(amount) > 1  ) &&
+          <p style={{color:"red"}}>please choose only one NFT </p>}
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
@@ -23,7 +28,7 @@ function ModalComponent(props: any) {
         <div className="img-container">
           <a
             className="relative mx-2 my-4 md:my-0 w-full md:w-1/3 text-center"
-            onClick={metamaskAction}
+            onClick={amount=="1" ? metamaskAction : metamaskErr}
           >
             <img
               src="assets/images/mintAction.png"
