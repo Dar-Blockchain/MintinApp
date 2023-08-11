@@ -1,3 +1,22 @@
 .list-inside {
   text-align: start;
 }
+
+.list-item {
+  font-weight: 700;
+  font-style: normal;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 25px;
+  letter-spacing: 0em;
+  --para-spacing: 0;
+  text-transform: none;
+  --head-indent: 1.7;
+  --numeric-list-marker: none;
+  list-style-type: disc;
+  margin-bottom: 10px;
+}
+
+.full-width {
+  width: 100%;
+}

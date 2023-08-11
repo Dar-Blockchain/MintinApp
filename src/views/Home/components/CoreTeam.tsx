@@ -13,7 +13,7 @@ const CoreTeam = () => {
           <img
             src="assets/images/Gael.png"
             alt="Gaël"
-            className="mx-auto rounded-full w-1/2 mb-4"
+            className="mx-auto rounded-lg w-1/2 mb-4"
           />
           <h3 className="font-title text-xl">Gael</h3>
           <p className="font-text">CEO & Artist</p>
@@ -22,7 +22,7 @@ const CoreTeam = () => {
           <img
             src="assets/images/BABA.png"
             alt="Baba"
-            className="mx-auto rounded-full w-1/2 mb-4"
+            className="mx-auto rounded-lg w-1/2 mb-4"
           />
           <h3 className="font-title text-xl">Baba</h3>
           <p className="font-text">Co-founder</p>
@@ -31,7 +31,7 @@ const CoreTeam = () => {
           <img
             src="assets/images/CRESPIX%20WALDOS.png"
             alt="Crespix"
-            className="mx-auto rounded-full w-1/2 mb-4"
+            className="mx-auto rounded-lg w-1/2 mb-4"
           />
           <h3 className="font-title text-xl">Crespix</h3>
           <p className="font-text">Co-founder</p>
@@ -40,7 +40,7 @@ const CoreTeam = () => {
           <img
             src="assets/images/Netoa.jpg"
             alt="Netoa"
-            className="mx-auto rounded-full w-1/2 mb-4"
+            className="mx-auto rounded-lg w-1/2 mb-4"
           />
           <h3 className="font-title text-xl">Netoa</h3>
           <p className="font-text">COO</p>
@@ -49,7 +49,7 @@ const CoreTeam = () => {
           <img
             src="assets/images/Kashi.png"
             alt="Kashi"
-            className="mx-auto rounded-full w-1/2 mb-4"
+            className="mx-auto rounded-lg w-1/2 mb-4"
           />
           <h3 className="font-title text-xl">Kashi</h3>
           <p className="font-text">CBO</p>
