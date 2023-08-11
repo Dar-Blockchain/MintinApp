@@ -57,12 +57,21 @@ const JoinMovement = () => {
         </div>
         <div className="text-center mt-8 mx-auto font-text">
           <p className="pb-4">
-            Each Waldos is unique and programmatically generated from over<br/>
+            Each Waldos is unique and programmatically generated from over
+            <br />
             multiple traits. Common, rares, mythic.
           </p>
           <p>
-            The Waldos are stored as ERC-721 tokens on the Ethereum<br/> blockchain
-            and hosted on IPFS. (View on OpenSea)
+            The Waldos are stored as ERC-721 tokens on the Ethereum
+            <br /> blockchain and hosted on IPFS. (
+            <a
+              className="text-white"
+              href="https://opensea.io/collection/the-waldos-legend"
+              target="_blank"
+            >
+              View on OpenSea
+            </a>
+            )
           </p>
         </div>
       </main>
