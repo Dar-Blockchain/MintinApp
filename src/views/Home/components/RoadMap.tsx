@@ -9,7 +9,10 @@ const RoadMap = () => {
         </footer>
         <div className="flex flex-col md:flex-row items-center justify-between mt-16 mx-8">
           <div className="md:w-1/2 text-2xl md:text-4xl">
-            <div className="text-center mt-2 mx-auto font-text">
+            <div
+              className="text-center mx-auto font-text"
+              style={{ height: "130px", maxWidth: "80%" }}
+            >
               <p className="mb-2 text-xl">
                 Started from the bottom, now we're here. And this is what we did
                 so far:
@@ -24,7 +27,10 @@ const RoadMap = () => {
             </ul>
           </div>
           <div className="md:w-1/2 text-2xl md:text-4xl">
-            <div className="text-center mt-2 mx-auto font-text">
+            <div
+              className="text-center mx-auto font-text"
+              style={{ height: "130px", maxWidth: "80%" }}
+            >
               <p className="mb-2 text-xl">
                 We have an enormous ambition: to conquer the world and give the
                 opportunity to invest in legal cannabis.
