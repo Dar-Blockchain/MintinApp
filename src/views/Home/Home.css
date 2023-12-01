@@ -20,3 +20,32 @@
 .full-width {
   width: 100%;
 }
+.mvtImg {
+  display: none;
+}
+@media screen and (min-width: 770px) {
+  .mvtContainer {
+    position: relative;
+    height: 350px;
+  }
+  .mvtImg {
+    display: unset;
+    position: absolute;
+    top: -180px;
+    right: 0;
+  }
+  .content {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
+@media screen and (min-width: 1500px) {
+  .content {
+    position: absolute;
+    bottom: -5%;
+    left: 50%;
+    transform: translate(-50%);
+  }
+}

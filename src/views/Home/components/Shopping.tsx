@@ -1,7 +1,7 @@
 const Shopping = () => {
   return (
     <>
-      <main className="font-text text-lg p-8">
+      <main className="font-text text-lg p-8 ">
         <div className="text-center mt-8">
           <h2 className="font-title text-3xl mb-4">SHOpping time!</h2>
           <p className="font-text text-lg">
@@ -10,7 +10,6 @@ const Shopping = () => {
           </p>
           <p className="font-text text-sm">Enjoy up to 50% discount!</p>
         </div>
-      </main>
 
       <div className="text-center mt-8">
         <a href="https://cbdwaldoslegend.com/">
@@ -26,6 +25,8 @@ const Shopping = () => {
         alt="Main Page Site"
         className="mx-auto my-8 rounded-lg mobile-full-width"
       />
+            </main>
+
     </>
   );
 };

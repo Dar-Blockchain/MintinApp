@@ -1,7 +1,7 @@
 const History = () => {
   return (
     <>
-      <main className="font-text text-lg p-8">
+      <main className="font-text text-lg p-8 prl">
         <div className="mt-8">
           <h2 className="font-title text-3xl mb-4">once upon a time...</h2>
           <p className="text-start font-text text-lg">

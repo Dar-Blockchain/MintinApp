@@ -1,12 +1,13 @@
 const About = () => {
   return (
     <>
+
+      <main className="font-text text-lg p-8 prl">
       <img
-        src="assets/images/PAGE%20DE%20MINT%20ILLUS%20V2.png"
+        src="assets/images/img2.png"
         alt="Your Image"
         className="mx-auto mobile-full-width desktop-rounded rounded-3xl"
       />
-      <main className="font-text text-lg p-8">
         <div className="flex flex-col md:flex-row items-center justify-between mt-16 mx-8">
           <div className="intro-text md:w-1/2 mr-3">
             <h2 className="text-start Avengeance text-3xl mb-4">
