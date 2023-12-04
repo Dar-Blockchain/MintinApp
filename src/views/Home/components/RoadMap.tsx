@@ -47,7 +47,7 @@ const RoadMap = () => {
         </div>
         <div className="flex" style={{ justifyContent: "center" }}>
           <img
-            src="assets/images/img3.png"
+            src="assets/images/img6.png"
             alt="ROADMAP"
             className="w-2/3 ml-3 rounded-3xl mobile-full-width"
             style={{ width: "100%" }}

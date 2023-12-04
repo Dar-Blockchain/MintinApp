@@ -4,12 +4,14 @@ const Footer = () => {
       <img
         src="assets/images/logo.png"
         alt="Waldos Legend"
-        className="mx-auto mb-4 w-10"
+        className="mx-auto mb-2 w-10"
       />
-      <h3 style={{ fontFamily: "Roboto Condensed" }}>
-        WALDOS <br />
-        LEGEND
-      </h3>
+      <img
+        src="assets/images/img5.png"
+        alt="Waldos Legend"
+        className="mx-auto mb-4 w-10"
+        style={{width: "120px"}}
+      />
     </header>
   );
 };

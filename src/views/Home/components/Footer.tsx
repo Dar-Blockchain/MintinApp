@@ -10,10 +10,12 @@ const Footer = () => {
             alt="Waldos Legend"
             className="mx-auto w-10"
           />
-          <p className="text-sm" style={{ fontFamily: "Roboto Condensed" }}>
-            WALDOS <br />
-            LEGEND
-          </p>
+          <img
+            src="assets/images/img5.png"
+            alt="Waldos Legend"
+            className="mx-auto mb-4 w-10 mt-2"
+            style={{ width: "70px" }}
+          />
         </div>
         <footer className="flex justify-center items-center">
           <a href="https://linktr.ee/waldoslegend" className="mx-1">

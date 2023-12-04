@@ -164,7 +164,7 @@ const JoinMovement = () => {
                 />
               </a>
             </div>
-            <div className="mt-3">
+            <div className="mr-3">
               <h2 className="font-title text-3xl mb-4">THEN...</h2>
               <a
                 className="relative mx-2 my-4 md:my-0 w-full md:w-1/3 text-center"
