@@ -6,7 +6,7 @@ const Shopping = () => {
           <h2 className="font-title text-3xl mb-4">SHOpping time!</h2>
           <p className="font-text text-lg">
             Don't know what to do with your brand new Waldos NFT? Visit our shop
-            and click on "J'ai un NFT".{" "}
+            and click on "J'ai un Waldos !".{" "}
           </p>
           <p className="font-text text-sm">Enjoy up to 50% discount!</p>
         </div>
