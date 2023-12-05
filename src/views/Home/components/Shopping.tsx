@@ -14,7 +14,7 @@ const Shopping = () => {
       <div className="text-center mt-8">
         <a href="https://cbdwaldoslegend.com/">
           <img
-            src="assets/images/Bouton%20Shop.png"
+            src="assets/images/img7.png"
             alt="Bouton Shop"
             className="mx-auto w-3/4 md:w-1/3 lg:w-1/8 object-contain"
           />
